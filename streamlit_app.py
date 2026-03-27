@@ -8,11 +8,9 @@ import streamlit as st
 st.markdown(
     """
     <h1 style='text-align: center; color: #4CAF50;'>
-        🌿 MindCare AI
+         MindCare AI
     </h1>
-    <p style='text-align: center; font-size:18px; color: #555;'>
-        Your companion for mental wellness
-    </p>
+   
     """,
     unsafe_allow_html=True
 )
