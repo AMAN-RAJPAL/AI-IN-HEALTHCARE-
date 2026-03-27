@@ -1,0 +1,5 @@
+streamlit
+PySimpleGUI
+pyttsx3
+tkinter
+opencv-python
