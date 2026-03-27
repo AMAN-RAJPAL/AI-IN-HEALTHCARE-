@@ -2,7 +2,63 @@ import streamlit as st
 import random
 import datetime
 from gtts import gTTS
+import streamlit as st
 
+# Custom styled header
+st.markdown(
+    """
+    <h1 style='text-align: center; color: #4CAF50;'>
+        🌿 MindCare AI
+    </h1>
+    <p style='text-align: center; font-size:18px; color: #555;'>
+        Your companion for mental wellness
+    </p>
+    """,
+    unsafe_allow_html=True
+)
+
+# Intro section with columns
+col1, col2 = st.columns([2,1])
+with col1:
+    st.write("### Welcome to MindCare AI")
+    st.write("""
+    MindCare AI is designed to support your mental health journey.
+    Explore quizzes, remedies, mood tracking, reminders, and fun games —
+    all in one place.
+    """)
+    st.write("👉 Use the sidebar to select an app.")
+with col2:
+    st.image("https://cdn-icons-png.flaticon.com/512/2920/2920244.png", width=150)
+
+# Divider
+st.markdown("---")
+
+# Feature highlights
+st.write("## ✨ Features")
+colA, colB, colC = st.columns(3)
+with colA:
+    st.markdown("#### 🧠 Quiz\nAssess your mental health with interactive questions.")
+with colB:
+    st.markdown("#### 💊 Remedies\nGet helpful precautions and cures for common conditions.")
+with colC:
+    st.markdown("#### 🎨 Mood Tracker\nLog your mood and visualize your emotional journey.")
+
+colD, colE = st.columns(2)
+with colD:
+    st.markdown("#### ⏰ Pill Reminder\nStay on track with your medication schedule.")
+with colE:
+    st.markdown("#### ✊🖐️✌️ Game\nPlay Stone–Paper–Scissors for a quick break.")
+
+# Footer
+st.markdown(
+    """
+    <hr>
+    <p style='text-align: center; color: #777; font-size:14px;'>
+        © 2026 MindCare AI | Built with Streamlit
+    </p>
+    """,
+    unsafe_allow_html=True
+)
 # Sidebar menu
 st.sidebar.title("📂 App Launcher")
 choice = st.sidebar.radio(
