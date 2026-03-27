@@ -24,9 +24,8 @@ with col1:
     Explore quizzes, remedies, mood tracking, reminders, and fun games —
     all in one place.
     """)
-    st.write("👉 Use the sidebar to select an app.")
-with col2:
-    st.image("https://cdn-icons-png.flaticon.com/512/2920/2920244.png", width=150)
+    st.write(" Use the sidebar to select an app.")
+
 
 # Divider
 st.markdown("---")
